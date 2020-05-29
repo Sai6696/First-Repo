@@ -1,7 +1,7 @@
 def jobName = JOB_NAME
 def projectName = jobName.split('/')[0]
 def mvn_version = 'Maven' 
-def application = 'First-Project'
+def application = 'First-Repo'
 node{
     stage('Checkout'){
                  echo  "Build: ${projectName} for branch ${BRANCH_NAME}"
